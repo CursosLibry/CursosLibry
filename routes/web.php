@@ -24,5 +24,10 @@ Route::get('/contact', [
     'as' => 'contact'
 ]);
 
+Route::get('/about', [
+    'uses' => 'HomeController@about',
+    'as' => 'about'
+]);
+
 
 
