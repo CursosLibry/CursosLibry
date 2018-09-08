@@ -30,8 +30,8 @@ class HomeController extends Controller
     {
         return view('contact');
     }
-    public function about()
+    public function blog()
     {
-        return view('about');
+        return view('blog');
     }
 }
