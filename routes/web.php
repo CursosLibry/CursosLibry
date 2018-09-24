@@ -28,6 +28,15 @@ Route::get('/blog', [
     'uses' => 'HomeController@blog',
     'as' => 'blog'
 ]);
-
-
-
+Route::get('/', [
+    'uses' => 'HomeController@index',
+    'as' => 'index'
+]);
+Route::get('/cursos', [
+    'uses' => 'CursosController@index',
+    'as' => 'index.cursos'
+]);
+Route::get('/cursos/add', [
+    'uses' => 'CursosController@viewAdd',
+    'as' => 'viewAdd.cursos'
+]);

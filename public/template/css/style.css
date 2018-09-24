@@ -1182,6 +1182,358 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 	height:90px;
 }
 
+div .courses_block .course_name{
+	font-size: 1.2em;
+	font-weight: bold;
+}
+.btn-primary{
+	background-color: #ff7619;
+    border-color: #FF6700;
+}
+.btn-primary:hover{
+	background-color: #e55c00;
+    border-color: #cc5200;
+}
+.btn-primary.active.focus, .btn-primary.active:focus, 
+.btn-primary.active:hover, .btn-primary:active.focus, 
+.btn-primary:active:focus, .btn-primary:active:hover, 
+.btn-primary:active, .btn-primary:focus{
+	background-color: #e55c00;
+    border-color: #cc5200;
+}
+.tooltip{
+	font-family: inherit;
+}
+.courses_block .course_close + .tooltip > .tooltip-inner {
+	background-color: #FF6700; 
+	color: #FFFFFF; 
+	border: 1px solid #FF6700; 
+	padding: 5px;
+	font-size: inherit;
+}
+.courses_block .course_close + .tooltip.bottom > .tooltip-arrow {
+	border-bottom: 5px solid #FF6700;
+}
+.courses_block{
+	width: 30%;
+	border: 1px solid #EBEBEB;
+	padding: 20px;
+	margin: 0 1.66%;	
+	float: left;
+	position: relative;
+	text-align: center;
+	box-shadow: 5px 5px 5px rgba(138, 138, 138, 0.5);
+	margin-bottom: 5px;
+}
+.courses_block:visited{
+	border: 2px solid #EBEBEB;
+}
+.courses_block div.course_close{
+	padding: 5px 10px;
+	position: absolute;
+	cursor: pointer;
+	top:0;
+	right: 0;
+}
+.courses_block p.course_name{
+	text-align: center;
+}
+.courses_block p.course_description{
+	min-height: 80px;
+	text-align: left;
+}
+.courses_block:hover div.course_image{ 
+	animation-name: courses_size;
+	animation-duration: 0.3s;
+	height: 250px;
+}
+.courses_block div.course_image{
+	animation-name: courses_resize;
+	animation-duration: 0.3s;
+	width: 100%;
+	height: 150px;
+	border: 1px solid #EBEBEB;
+	margin-bottom: 15px;
+	overflow: hidden;
+}
+.courses_block div.course_image img{
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	width: 100%;
+}
+.courses_block a.btn{
+	height: 0px;
+	padding: 0px;
+	border-width: 0px;
+	animation-name: courses_resize_button;
+	animation-duration: 0.3s;
+}
+.courses_block:hover a.btn{
+	height: 34px;
+	padding: 6px 12px;
+	border-width: 1px;
+	animation-name: courses_size_button;
+	animation-duration: 0.3s;
+}
+.courses_row .blog-post{
+	min-height: 480px;
+}
+.courses_block.create{
+	min-height: 353px;
+
+}
+.create a{
+	animation-name: courses_resize_add;
+	animation-duration: 0.3s;
+	width: 100%;
+	height: 230px;
+	margin-bottom: 0px;
+	background-color: rgba(243, 243, 243, 0.753);
+	display: block;
+
+}
+.create a::after{
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	margin: 0 auto;
+	content: "+";
+	background-color: #848995;
+	border-radius: 100%;
+	height: 100px;
+	width: 100px;
+	display: block;
+	color: white;
+	line-height: 90px;
+	font-size:5em;
+	/* text-shadow: 5px 5px 5px rgba(195, 195, 195, 0.5); */
+}
+.create:hover a{
+	animation-name: courses_size_add;
+	animation-duration: 0.3s;
+	height: 340px;
+	margin-bottom: 50px;
+}
+@keyframes courses_size_button{
+	0%{
+		height: 0px;
+		padding: 0px;
+	}
+	100%{
+		height: 34px;
+		padding: 6px 12px;
+		border-width: 1px;
+	}
+}
+@keyframes courses_resize_button{
+	0%{
+		height: 34px;
+		padding: 6px 12px;
+
+	}
+	100%{
+		height: 0px;
+		padding: 0px;
+		padding-left: 6px;
+		padding-right: 6px;
+	}
+}
+@keyframes courses_size_add{
+	0%{
+		height: 230px;
+		margin-bottom: 0px;
+	}
+	100%{
+		height: 340px;
+		margin-bottom: 50px;
+	}
+}
+@keyframes courses_resize_add{
+	0%{
+		height: 340px;
+		margin-bottom: 50px;
+	}
+	100%{
+		height: 230px;
+		margin-bottom: 0px;
+	}
+}
+@keyframes courses_size{
+	0%{
+		height: 150px;
+		
+	}
+	100%{
+		height: 250px;
+	}
+}
+@keyframes courses_resize{
+	0%{
+		height: 250px;
+		
+	}
+	100%{
+		height: 150px;
+	}
+}
+
+
+/*------------------------------------*\
+	Form Customize
+\*------------------------------------*/
+select.form-control{
+	height: 40px;
+	width: 100%;
+	padding: 0px 15px;
+	border: 1px solid #EBEBEB;
+	-webkit-box-shadow: none;
+	box-shadow:none;
+}
+input[type="radio"].input {
+	display: none;
+}
+input[type="radio"].input:checked + label span.radio_base {
+	border-color: #009688;
+}
+input[type="radio"].input:checked + label:after {
+	transform: scale(0.7);
+	height: 12px;
+	width: 12px;
+	background: #009688;
+	border: 3px solid white;
+	box-sizing: content-box;
+} 
+div.radio_button{
+	display: inline-block;
+	margin-right: 50px;
+}
+div.radio_button label {
+	display: inline-block;
+	position: relative;
+	box-sizing: border-box;
+	width: 120px;
+	height: 20px;
+	margin: 0px;
+	cursor: pointer;
+	transition: .2s;
+}
+div.radio_button label span.radio_base{
+	display: inline-block;
+	position: relative;
+	box-sizing: border-box;
+	width: 20px;
+	height: 20px;
+	transform: translateY(50%);
+	background: #CCC;
+	top: -24px;
+	left: 8px;
+	margin: 0px;
+	border: 12px solid #7A7A7A;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: .2s;
+}
+div.radio_button label span{
+	position: absolute;
+	margin-top: -10px;
+    margin-left: 15px;
+}
+div.radio_button label:before {
+	content: '';
+	position: absolute;
+	display: block;
+	height: 40px;
+	width: 40px;
+	top: -20px;
+	z-index: -1;
+	border-radius: 50%;
+	transition: .3s;
+}
+div.radio_button label:after {
+	content: '';
+	display: block;
+	height: 20px;
+	width: 20px;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    -webkit-transform: translate(-50% -50%);
+    transform: translate(-50%, -50%) !important;
+    height: 15px;
+    width: 15px;
+	background: white;
+	border-radius: 50%;
+	background-size: contain;
+	transform: scale(0);
+	transition: .2s;
+}
+div.radio_button label:active:before {
+	background: #bfbfbf;
+}
+.radio_payments{
+	display: none;
+}
+.payments_option h5{
+	cursor: pointer;
+}
+.payments_option label{
+	display: none;
+}
+div.payments div.payments_option label{
+	border: 1px solid rgb(235, 235, 235);
+	color: #798696;
+	font-weight: normal;
+	border-radius: 5px;
+	padding: 10px;
+	cursor: pointer;
+	text-align: center;
+}
+.radio_payments:checked + label {
+	padding: 20px!important;
+	/* background-color: red; */
+}
+.payments label ul li ul li{
+	animation-name:  payment_hide_money;
+	animation-duration: 0.3s;
+	overflow: hidden;
+	height: 0px;
+}
+.radio_payments:checked + label ul li ul li{
+	animation-name:  payment_show_money;
+	animation-duration: 0.3s;
+	display: block;
+	height: 20px;
+	margin-top: 0px;
+	/* background-color: red; */
+}
+
+@keyframes payment_show_money{
+	0%{
+		height: 0px;
+	}
+	100%{
+		height: 20px;
+		/* padding: 6px 12px; */
+		/* border-width: 1px; */
+	}
+}
+@keyframes payment_hide_money{
+	0%{
+		height: 20px;
+	}
+	100%{
+		height: 0px;
+	}
+}
+/*------------------------------------*\
+	/Form Customize
+\*------------------------------------*/
+
+
+
 /*------------------------------------*\
 	Responsive
 \*------------------------------------*/
