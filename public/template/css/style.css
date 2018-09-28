@@ -1405,7 +1405,33 @@ input[type="radio"].input:checked + label:after {
 	background: #009688;
 	border: 3px solid white;
 	box-sizing: content-box;
-} 
+}
+.file_field{
+	width: 100%;
+	height: 40px;
+	margin-bottom: 20px;
+}
+.file_field .input{
+	margin: 0;
+}
+.file_field div{
+	width: 20px;
+    height: 20px;
+    right: 30px;
+    background-image: url(../img/upload.png);
+    background-size: cover;
+    margin-top: 10px;
+    position: absolute;
+}
+input[type='file'].input{
+	cursor: pointer;
+	opacity: 0;
+	top: -40px;
+	height: 40px;
+	width: 100%;
+	border-radius: 4px;
+	position: relative;
+}
 div.radio_button{
 	display: inline-block;
 	margin-right: 50px;

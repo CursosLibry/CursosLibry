@@ -43,7 +43,11 @@
                     <input class='input' type='text' placeholder='Para quem' name='to_who'>
                     <input class='input' type='text' placeholder='Objetivos' name='objective'>
                     <input class='input' type='text' placeholder='Descrição' name='description'>
-                    <input class='form-control-file' type='file' placeholder='Banner' name='banner'>
+                    <div class='file_field'>
+                        <div></div>
+                        <input class='input' type='text' placeholder='Insira ou arraste seu arquivo' name='file_name'>
+                        <input class='form-control-file input' type='file' placeholder='Banner' name='banner'>
+                    </div>
                     <input class='input' type='text' placeholder='Mensagem de Boas vindas' name='welcome_message'>
                     <input class='input' type='text' placeholder='Mensagem de Parabenização' name='congrats_message'>
 
@@ -58,7 +62,7 @@
                     </div>
                     <div class='payments'>
                     <h4>Selecione um plano</h4>
-                        <div class='payments_option'>
+                        <div class='payments_option payments_option_bs'>
                         <h5> - Premium Basic</h5>
                             <input id='payment_1' class='radio_payments' type='radio' name='5 Cursos' checked value='1'>
                             <label for='payment_1'>
